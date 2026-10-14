@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: vetix-site
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
+    autoDeploy: true
+    headers:
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=604800
