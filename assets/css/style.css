@@ -163,11 +163,16 @@ p { margin: 0; }
 .sobre__intro p { margin-top: 20px; max-width: 40rem; color: #C9D3E3; font-size: 1.15rem; }
 .clientes { margin-top: clamp(48px, 7vw, 80px); padding-top: 32px; border-top: 1px solid #2E4670; }
 .clientes h3 { color: var(--ouro-claro); font-size: 1.15rem; }
-.clientes__lista {
-  list-style: none; padding: 0; margin: 20px 0 0;
-  display: flex; flex-wrap: wrap; gap: 14px 36px;
-  font-family: var(--f-titulo); font-weight: 700; font-size: clamp(1.15rem, 2vw, 1.5rem); color: var(--marfim);
+.logos {
+  list-style: none; padding: 0; margin: 24px 0 0;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px;
 }
+.logos li {
+  background: #fff; border-radius: 14px; height: 96px;
+  display: grid; place-items: center; padding: 14px 18px;
+}
+.logos img { max-width: 100%; max-height: 62px; width: auto; height: auto; object-fit: contain; }
+.clientes__mais { margin-top: 20px; color: #C9D3E3; }
 
 /* ---------- Sindilojas ---------- */
 .parceria { position: relative; overflow: hidden; background: var(--azul-escuro); color: var(--marfim); }
